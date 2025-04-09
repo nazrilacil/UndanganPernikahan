@@ -205,5 +205,6 @@ body {
 @media (max-width: 576px) {
     html{
         font-size: 60%;
+        overflow-x: hidden;
     }
 }
