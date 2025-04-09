@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 :root {
     --pink: #f14e95;
     --bg: #0a0a0a;
@@ -31,10 +35,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     filter:grayscale();
+     
 }
 .hero {
     position: relative;
     min-height: 100vh;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .hero h1 {
     font-family: 'Sacramento', cursive;
