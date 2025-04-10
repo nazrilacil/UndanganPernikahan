@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,6 @@
     <link rel="stylesheet" href="./src/style/cyber.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
     <section id="hero"
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
@@ -27,10 +25,9 @@
             <h1>Acil & <span>小川彩</span></h1>
             <p>Akan melangsungkan resepasi pernikahan:</p>
             <div class="simply-countdown-cyber"></div>
-            <a href="#home" class="btn btn-lg">Lihat Undangan</a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
         </main>
     </section>
-
     <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">Acil<span>小川彩</span></a>
@@ -49,7 +46,7 @@
                         <a class="nav-link" href="#home">Home</a>
                         <a class="nav-link" href="#info">Info</a>
                         <a class="nav-link" href="#story">Story</a>
-                        <a class="nav-link" href="#galeri">Galery</a>
+                        <a class="nav-link" href="#galery">Galery</a>
                         <a class="nav-link" href="#rsvp">RSVP</a>
                         <a class="nav-link" href="#gifts">Gifts</a>
                     </div>
@@ -57,7 +54,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- Home Start -->
     <section id="home" class="home">
         <div class="container">
             <div class="row justify-content-center">
@@ -101,7 +98,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Home End -->
     <section id="info" class="info">
         <div class="contaner">
             <div class="row justify-content-center">
@@ -117,7 +114,7 @@
                 <div class="col-md-5 col-10">
                 <div class="card text-center text-bg-light mb-5">
                     <div class="card-header">
-                      Akad Nikah
+                    Akad Nikah
                     </div>
                     <div class="card-body">
                         <div class="row justify-content-center">
@@ -132,14 +129,14 @@
                         </div>
                     </div>
                     <div class="card-footer ">
-                      Saat Acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi. 
+                    Saat Acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi. 
                     </div>
-                  </div>
+                </div>
                 </div>
                 <div class="col-md-5 col-10">
                 <div class="card text-center text-bg-light">
                     <div class="card-header">
-                      Resepsi
+                    Resepsi
                     </div>
                     <div class="card-body">
                         <div class="row justify-content-center">
@@ -154,20 +151,226 @@
                         </div>
                     </div>
                     <div class="card-footer ">
-                      Saat Acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi. 
+                    Saat Acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi. 
                     </div>
-                  </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="story" class="story">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Bagaimana Cinta Kami Bersemi</span>
+                    <h2>Story of the meeting</h2>
+                    <p>Kami bertemu secara tak sengaja, saling mengenal, jatuh cinta, dan akhirnya pacaran bahagia.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image" style="background-image: url(./img/stasiunkyoto.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Pertama Bertemu</h3>
+                                    <span>1 juni 2027</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Di Jepang, kami bertemu di stasiun kereta, saling tersenyum, dan mulai berbicara pelan.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-iverted">
+                            <div class="timeline-image" style="background-image: url(https://picsum.photos/200/300);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Mulai Dekat</h3>
+                                    <span>1 junuary 2028</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kami bertemu di Tokyo, saling berbicara tentang budaya, lalu mulai mengenal lebih dekat satu sama.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image" style="background-image: url(https://picsum.photos/200/301);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Mulai serius</h3>
+                                    <span>14 juni 2030</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kami mulai menghabiskan waktu bersama, berbicara tentang masa depan, dan akhirnya memutuskan untuk serius.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-iverted">
+                            <div class="timeline-image" style="background-image: url(https://picsum.photos/200/302);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Tunangan</h3>
+                                    <span>25 November 2034</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Di bawah sakura yang mekar, aku melamarnya, dan dia dengan senang hati menerima tunanganku.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galery" class="galery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Memori kisah kami</span>
+                    <h2>Gallery Foto</h2>
+                    <p>Galeri foto kenangan Aya di Jepang, penuh momen indah dan kenangan tak terlupakan.</p>
+                </div>
+                <div class="row row-cols-md-2 row-cols-sm-2 row-cols-1">
+                    <div class="col-12 mb-3 mt-3">
+                        <a href="./img/gallery/0.jpg" data-toggle="lightbox" data-caption="Aya sedang diajari pemrograman oleh Acil" data-gallery="ayagallery">
+                            <img src="./img/gallery/thumbnail/0.jpg" alt="Aya sedang diajari pemrograman oleh Acil" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col-12 mb-3 mt-3">
+                        <a href="https://i.pinimg.com/1200x/30/08/f8/3008f80b294543c117f172ac043b3f20.jpg" data-toggle="lightbox" data-caption="Aya senang dikasih kopi oleh Acil" data-gallery="ayagallery">
+                            <img src="https://i.pinimg.com/1200x/30/08/f8/3008f80b294543c117f172ac043b3f20.jpg" alt="Aya senang dikasih kopi oleh Acil" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                </div>
+                <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
+                <div class="col-6 mt-3">
+                    <a href="./img/gallery/1.jpg" data-toggle="lightbox" data-caption="Aya sedang merayu" data-gallery="ayagallery">
+                        <img src="./img/gallery/thumbnail/1.jpg" alt="Aya sedang merayu Acil" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col-6 mt-3">
+                    <a href="./img/gallery/2.jpg" data-toggle="lightbox" data-caption="Aya sedang jalan bersama Acil" data-gallery="ayagallery">
+                        <img src="./img/gallery/thumbnail/2.jpg" alt="Aya sedang jalan bersama Acil" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col-6 mt-3">
+                    <a href="https://i.pinimg.com/1200x/b7/93/a2/b793a23ac7db320f6a6bd2aa12e5a067.jpg"  data-toggle="lightbox" data-caption="Kasian gak di fotoin" data-gallery="ayagallery">
+                        <img src="https://i.pinimg.com/1200x/b7/93/a2/b793a23ac7db320f6a6bd2aa12e5a067.jpg" alt="Kasian gak di fotoin" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col-6 mt-3">
+                    <a href="https://i.pinimg.com/1200x/19/bc/51/19bc51a13b9709fbc3bbee224728b2d9.jpg"  data-toggle="lightbox" data-caption="Aya ngintip" data-gallery="ayagallery">
+                        <img src="https://i.pinimg.com/1200x/19/bc/51/19bc51a13b9709fbc3bbee224728b2d9.jpg" alt="Aya ngintip" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Konfirmasi Kehadiran</h2>
+                    <p>Isi form dibawah ini untuk konfirmasi kehadiran.</p>
+                </div>
+            </div>
+
+            <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbxNtbL2jEfZKrENLJx-vaTa9lMohHW3ncBfGV1ZVk6Bz8xNTOR7xJWPO1VFZAVtLUdhfw/exec" id="my-form">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="jumlah" class="form-label">Jumlah</label>
+                        <input type="number" class="form-control" id="jumlah" name="Jumlah" min="1" max="5" length="1" value="1">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Konfirmasi</label>
+                        <select name="status" id="status" class="form-select">
+                            <option selected>Pilih salah satu</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="gifts" class="gifts">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Ungkapan Tanda kasih</span>
+                    <h2>Kirim Hadiah</h2>
+                    <p>Di Jepang, memberikan hadiah adalah tradisi penuh makna dan penghormatan.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="fw-bold">BCA</div>
+                            123456789 - Acil
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">MANDORi</div>
+                            12341234 - Acil
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">OVO</div>
+                            085175414118 - Acil
+                        </li>
+                        <li class="list-group-item">
+                            <div class="fw-bold">SAWERIA</div>
+                            <img src="./img/saweria.png" alt="Saweria QR Acil" class="img-thumbnail" width="150">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <small class="block">Copyright &copy; 2025 Acil小川彩 Wedding.</small>
+                    <small class="block">Design by <a href="https://github.com/cilboy04/UndanganPernikahan">@nazrilacil</a>.</small>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/achylslwly?igsh=eHpscGxhcWNoaHpp" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://x.com/M_AcilSlwly?t=bj7tmoDwic1MPGHynMt8PQ&s=09" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://github.com/cilboy04" target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nazril-acil-48292235a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.tiktok.com/@chlysslwly" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/script.js"></script>
     <script src="./src/js/simplyCountdown.js"></script>
     <script src="./src/js/simplyCountdown.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
 </body>
-
 </html>
