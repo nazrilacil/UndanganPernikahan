@@ -5,11 +5,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-html, body {
-  overflow-x: hidden;
-  width: 100%;
 }
 :root {
     --pink: #f14e95;
@@ -35,7 +30,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     filter:grayscale();
-     
 }
 .hero {
     position: relative;
@@ -101,7 +95,7 @@ body {
     padding-top: 15rem;
     padding-bottom: 5rem;
 }
-.home h2, .info h2  {
+.home h2, .info h2, .story h2, .galery h2, .rsvp h2, .gifts h2{
     color: var(--pink);
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
@@ -179,6 +173,156 @@ body {
     font-size: 0.9rem;
     font-weight: 300;
 }
+.story, .galery, .rsvp, .gifts{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.story span, .galery span, .gifts span {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.story p, .galery p, .rsvp p, .gifts p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+.timeline li {
+    margin-bottom:1.5rem ;
+    position: relative;
+}
+.timeline li::before, .timeline li::after {
+    content: "";
+    display: table;
+}
+.timeline li::after {
+    clear: both;
+}
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.timeline li .timeline-panel::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+.timeline li .timeline-panel::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+.timeline li.timeline-iverted .timeline-panel {
+    float: right;
+}
+.timeline li.timeline-iverted .timeline-panel::before{
+    content: '';
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline li.timeline-iverted .timeline-panel::after{
+    content: '';
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+.galery {
+    background-color: #fbb7dd;
+}
+.rsvp {
+    background-color: var(--bg);
+}
+.rsvp  h2 {
+    font-size: 4.5rem;
+}
+.rsvp p {
+    color: white;
+}
+.rsvp form label {
+    color: white;
+}
+.rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid #fbb7dd;
+    margin-top: 20px;
+}
+.rsvp button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+footer {
+    padding: 3rem;
+    background-color: #ff92c4;
+    color: #901f3b;
+    text-shadow: var(--shadow);
+}
+footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+footer li a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+footer li {
+    padding-top: 10px;
+    list-style: none;
+}
 @media (max-width: 1200px) {
     .home .hart {
     transform: translateX(-50%) translateY(45px); 
@@ -191,6 +335,30 @@ body {
     .home .hart {
         display: none;
     }
+    .timeline::before {
+        left: 60px;
+    }
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+    .timeline li .timeline-panel::before{
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
 }
 @media (max-width: 768px) {
     html{
@@ -201,10 +369,36 @@ body {
         font-size: 2rem;
         text-align: center;
     }
+    .sticky-top {
+        overflow: hidden;
+    }
+    .timeline li .timeline-image {
+        width: 140px;
+        height: 140px;
+    }
+    footer li a{
+        font-size: 2rem;
+    }
 }
 @media (max-width: 576px) {
     html{
         font-size: 60%;
-        overflow-x: hidden;
+    }
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+    .timeline li .timeline-panel {
+        width: 65%;
+        transform: translateX(-20px);
+    }
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+    footer li a{
+        font-size: 2.2rem;
     }
 }
