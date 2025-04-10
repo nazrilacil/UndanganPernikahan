@@ -6,6 +6,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 576px) {
+     html{
+         font-size: 60%;
+         overflow-x: hidden;
+     }
+ }
 :root {
     --pink: #f14e95;
     --bg: #0a0a0a;
@@ -363,15 +369,13 @@ footer li {
 @media (max-width: 768px) {
     html{
         font-size: 65%;
+        overflow-x: hidden;
     }
     .mynavbar .nav-link {
         text-transform: uppercase;
         font-size: 2rem;
         text-align: center;
-    }
-    .sticky-top {
-        overflow: hidden;
-    }
+        
     .timeline li .timeline-image {
         width: 140px;
         height: 140px;
