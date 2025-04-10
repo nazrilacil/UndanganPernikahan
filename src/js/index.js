@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const offCanvas = document.querySelector('.offcanvas');
-const stickyTop = document.querySelector('.sticky-top');
+// const offCanvas = document.querySelector('.offcanvas');
+// const stickyTop = document.querySelector('.sticky-top');
 
-offCanvas.addEventListener('show.bs.offcanvas', function() {
-    stickyTop.style.overflow = 'visible';
-});
+// offCanvas.addEventListener('show.bs.offcanvas', function() {
+//     stickyTop.style.overflow = 'visible';
+// });
 
-offCanvas.addEventListener('hidden.bs.offcanvas', function() {
-    stickyTop.style.overflow = 'hidden';
-});
+// offCanvas.addEventListener('hidden.bs.offcanvas', function() {
+//     stickyTop.style.overflow = 'hidden';
+// });
 
 const rootElement = document.querySelector(':root');
 
