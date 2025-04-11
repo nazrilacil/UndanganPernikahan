@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✨Undangan Pernikahan✨</title>
+    <link rel="icon" href="./img/icon.png" type="image/png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- 👇 css code file 👇 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/style/global.css" />
     <link rel="stylesheet" href="./src/style/cyber.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,13 +19,14 @@
     <section id="hero"
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
-            <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+            <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
             <h1>Acil & <span>小川彩</span></h1>
             <p>Akan melangsungkan resepasi pernikahan:</p>
             <div class="simply-countdown-cyber"></div>
             <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
         </main>
     </section>
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">Acil<span>小川彩</span></a>
@@ -54,6 +53,7 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar End -->
     <!-- Home Start -->
     <section id="home" class="home">
         <div class="container">
@@ -99,6 +99,7 @@
         </div>
     </section>
     <!-- Home End -->
+    <!-- Info Start -->
     <section id="info" class="info">
         <div class="contaner">
             <div class="row justify-content-center">
@@ -106,6 +107,7 @@
                     <h2>Informasi Acara</h2>
                     <p class="alamat">Alamat: Hotel Granvia Kyoto <br> JR京都駅 Central Entrance, Shimogyo Ward, Kyoto, 600-8216, Jepang
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3268.8325632615247!2d135.7589822!3d34.9858585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108aef4bc5869%3A0xb39dd6cf2d31fbe2!2sHotel%20Granvia%20Kyoto!5e0!3m2!1sid!2sid!4v1744360023886!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/mvLf7RvhkKB6bMFQA" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta</a>
                     <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba ditujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi anda salah jadwal atau salah tempat.</p>
                 </div>            
@@ -158,6 +160,8 @@
             </div>
         </div>
     </section>
+    <!-- Info End -->
+    <!-- Story Start -->
     <section id="story" class="story">
         <div class="container">
             <div class="row justify-content-center">
@@ -223,7 +227,8 @@
             </div>
         </div>
     </section>
-
+    <!-- Story End -->
+    <!-- Gallery Start -->
     <section id="galery" class="galery">
         <div class="container">
             <div class="row justify-content-center">
@@ -269,7 +274,8 @@
             </div>
         </div>
     </section>
-
+    <!-- Gallery End -->
+    <!-- RSVP Start -->
     <section id="rsvp" class="rsvp">
         <div class="container">
             <div class="row justify-content-center">
@@ -278,7 +284,6 @@
                     <p>Isi form dibawah ini untuk konfirmasi kehadiran.</p>
                 </div>
             </div>
-
             <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
             method="POST" 
             action="https://script.google.com/macros/s/AKfycbxNtbL2jEfZKrENLJx-vaTa9lMohHW3ncBfGV1ZVk6Bz8xNTOR7xJWPO1VFZAVtLUdhfw/exec" id="my-form">
@@ -308,8 +313,17 @@
                     <button class="btn btn-primary" type="submit">Kirim</button>
                 </div>
             </form>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div id="disqus_thread"></div>
+                    <script src="./src/js/discus.js"></script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- RSVP End -->
+    <!-- Gifts Start -->
     <section id="gifts" class="gifts">
         <div class="container">
             <div class="row justify-content-center">
@@ -343,7 +357,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Gifts End -->
     <footer>
         <div class="container">
             <div class="row">
@@ -363,6 +377,16 @@
             </div>
         </div>
     </footer>
+    <!-- Audio Start -->
+    <div id="audio-container">
+        <audio id="stayAya" autoplay loop>
+            <source src="./audio/stay-with-me-ogawaAya.mp3" type="audio/mp3">
+        </audio>
+        <div class="audio-icon-wrapper">
+                <i class="bi bi-disc-fill"></i>
+        </div>
+    </div>
+    <!-- Audio End -->
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
     <script src="./src/js/script.js"></script>
