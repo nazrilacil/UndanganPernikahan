@@ -349,6 +349,14 @@ footer li {
 }
 .audio-icon-wrapper {
     display: none;}
+@keyframes rotate {
+    form {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 @media (max-width: 1200px) {
     .home .hart {
     transform: translateX(-50%) translateY(45px); 
