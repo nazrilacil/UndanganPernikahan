@@ -329,6 +329,26 @@ footer li {
     padding-top: 10px;
     list-style: none;
 }
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+.audio-icon-wrapper {
+    display: none;}
 @media (max-width: 1200px) {
     .home .hart {
     transform: translateX(-50%) translateY(45px); 
