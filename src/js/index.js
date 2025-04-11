@@ -36,12 +36,31 @@ function disableScroll() {
 	}
 	rootElement.style.scrollBehavior = 'auto';
 }
+const sound = document.getElementById('stayAya');
+const discIcon = document.querySelector('.audio-icon-wrapper');
+let play = false;
 
 function enableScroll() {
 	window.onscroll = function() { }
 	rootElement.style.scrollBehavior = 'smooth';
-    localStorage.setItem('opened', 'true');
+    discIcon.style.display = 'flex';
+    playAudio();
+    play = true;
+    // localStorage.setItem('opened', 'true');
 }
-if(!localStorage.getItem('opened')) {
-    disableScroll();
+function playAudio () {
+    sound.play();
 }
+discIcon.onclick = function () {
+    if(play === true) {
+        sound.pause();
+        discIcon.innerHTML = '<i class="bi bi-pause-circle-fill"></i>';
+    }else{
+        sound.play();
+        discIcon.innerHTML = '<i class="bi bi-disc-fill"></i>';
+    }
+    play = !play;
+}
+// if(!localStorage.getItem('opened')) {
+// }
+disableScroll();
