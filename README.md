@@ -8,7 +8,7 @@
   <br>
 </p>
 
-## caranya
+## Tutirial
 <h4>1. gitclone https://github.com/cilboy04/UndanganPernikahan.git</h4>
 <div align="center">
 <img src="https://github.com/cilboy04/foto/blob/main/screenshot/1.jpg?raw=true" width="100%" height="250">
