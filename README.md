@@ -18,7 +18,7 @@
 <p>ganti nama yanto dengan nama tamu yang diundang</p>
 <p>Sesuaikan dengan tamu yang akan diundang p=Ibu/Bapak/Saudara/Saudari</p>
 <img src="https://github.com/cilboy04/foto/blob/main/screenshot/Screenshot%20(9).png?raw=true">
-<p align="center"><a href="https://nazrilacil.github.io/UndanganPernikahan/" ><strong>➥ Try it now</strong></a></p>
+<p align="center"><a href="https://nazrilacil.github.io/UndanganPernikahan/" ><strong>➥ Preview Demo</strong></a></p>
 
 ## suport-me
   <li align="left">&nbsp;&nbsp;&nbsp;&nbsp;Visit  <a href="https://cilboy04.github.io/nazrilacilportofolio/" target="_blank">Portfolio</a> to know more about me ...</li>
